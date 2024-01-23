@@ -7,7 +7,6 @@
 @import url('./componets/slider.css');
 @import url('./componets/base.css');
 @import url('./componets/@mediaQuery.css');
-@import url('./componets/index.css');
 @import url('./componets/header.css');
 @import url('./componets/footer.css');
 @import url('./componets/blog.css');
@@ -16,12 +15,10 @@
 @import url('./componets/sobre.css');
 @import url('./componets/faq.css');
 @import url('./componets/galeria.css');
-@import url('./componets/incricao.css');
 @import url('./componets/membros.css');
 @import url('./componets/politica.css');
 @import url('./componets/programas.css');
 @import url('./componets/termos.css');
-@import url('./componets/areaMembros.css');
 @import url('./componets/inscricao.css');
 @import url('./componets/loginMembros.css');
 @import url('./componets/carrinho.css');

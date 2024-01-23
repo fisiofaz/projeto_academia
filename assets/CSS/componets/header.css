@@ -26,7 +26,7 @@
 /* links secundario*/
 .linkSecundary {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .linkSecundary-button-login a {
-  text-decoration: nome;
+  text-decoration: none;
   font-size: 1.7rem;
   color: var(--color-primary);
   cursor: pointer;

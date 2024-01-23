@@ -144,11 +144,17 @@ let inputsCorretos = {
 }
 
 btnsubmit.addEventListener('click', (e) => {
-  // Verificando os inputs corretos
+  // Verificando se os campos foram preenchidos corretamente
   if(inputsCorretos.username == false || inputsCorretos.email == false || inputsCorretos.senha == false || inputsCorretos.confirmaSenha == false){
     e.preventDefault()
-    alert('Os campos obrigatórios precisam ser preenchido corretamente!')
-  }else {
+    alert('Os campos obrigatórios precisam ser preenchidos corretamente!')
+  } else {
+    // Salvar os dados validados no localStorage
+    localStorage.setItem('username', usernameInput.value);
+    localStorage.setItem('email', emailInput.value);
+    localStorage.setItem('senha', senhaInput.value);
+    
+
     alert('Formulário enviado com sucesso!')
   }
 })

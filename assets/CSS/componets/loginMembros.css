@@ -170,7 +170,7 @@ label:not(:first-of-type){
 
 .eye-icon1, .eye-icon2, .eye-icon3 {
   position: absolute;
-  top: 63%;
+  top: 60%;
   right: 22%;
   display: inline-block;
   width: 20px;
@@ -181,11 +181,11 @@ label:not(:first-of-type){
 }
 
 .eye-icon2 { 
-  top: 69%; 
+  top: 67%; 
 }
 
 .eye-icon3 { 
-  top: 56%; 
+  top: 53%; 
 }
 
 

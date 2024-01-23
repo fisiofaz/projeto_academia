@@ -38,17 +38,11 @@
                           ou 
             <a href="/loginMembros.html" title="Cadastre-se">Cadastre-se</a>
           </div>   
-        </div>
-        <div class="linkSecundary-button-menu">
-          <a href="./carrinho.html" rel="noopener noreferrer"  >
-            <img src="../images/carrinho-de-compra.png" alt="carinho de compra do site">
-          </a>
-        </div>     
+        </div>  
       </div>  
       </div>      
       <div class="menuLinks overlay-content">               
-        <a href="./carrinho.html">Carrinho</a></li>
-        <a href="./membros.html">Membros</a></li>
+        <a href="./carrinho.html">Produtos</a></li>
         <a href="./galeria.html">Galeria</a></li>
         <a href="./programas.html">Programas de Treinamento</a>
       </div>
@@ -93,11 +87,11 @@
             <div class="form__pagamento-chavePix-chavePix">
               <small>Valor em R$</small>
               <div class="form__pagamento-chavePix-imput">
-                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                <input type="text" id="valorPix" name="valorPix" required="required" value=""> 
               </div>  
               <small>CPF/CNPJ</small> 
               <div class="form__pagamento-chavePix-imput">
-                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="999.999.999-99">                 
+                <input type="text" id="chavePix" name="chavePix" required="required" placeholder="999.999.999-99" >                 
               </div>    
             </div>
             <div class="form__pagamento-button">
@@ -116,8 +110,8 @@
                     <div class="card-number-box">################</div>
                     <div class="flexbox">
                         <div class="box">
-                            <span>Número do Cartão</span>
-                            <div class="card-holder-name">Nome do cartão</div>
+                            <span>Nº do cartão</span>
+                            <div class="card-holder-name">Nome do titular</div>
                         </div>
                         <div class="box">
                             <span>Expira em</span>
@@ -140,17 +134,17 @@
             <form action="">
                 <div class="inputBox">
                     <span>Número do cartão</span>
-                    <input type="text" maxlength="16" class="card-number-input">
+                    <input type="text" maxlength="16" class="card-number-input" id="numeroCartaoCartao" >
                 </div>
                 <div class="inputBox">
                     <span>Nome do cartão</span>
-                    <input type="text" class="card-holder-input">
+                    <input type="text" class="card-holder-input" id="nomeTitularCartao">
                 </div>
                 <div class="flexbox">
                     <div class="inputBox">
-                        <span>Expira mês</span>
+                        <span>Expira Mês</span>
                         <select name="" id="" class="month-input">
-                            <option value="month" selected disabled>mês</option>
+                            <option value="month" selected disabled>Mês</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
                             <option value="03">03</option>
@@ -168,7 +162,7 @@
                     <div class="inputBox">
                         <span>Expira Ano</span>
                         <select name="" id="" class="year-input">
-                            <option value="year" selected disabled>ano</option>
+                            <option value="year" selected disabled>Ano</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
@@ -183,13 +177,13 @@
                     </div>
                     <div class="inputBox">
                         <span>CVV</span>
-                        <input type="text" maxlength="4" class="cvv-input">
+                        <input type="text" maxlength="4" class="cvv-input" id="codigoSegurancaCartao">                  
                     </div>
                 </div>
                 <div class="form__cartaoCredit">
                   <small>Valor em R$</small>
                   <div class="form__cartaoCredit-imput">
-                    <input type="text" id="cartao" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                    <input type="text" id="valorCartao" name="valorCacrtão" value="" required="required"> 
                   </div>
                 </div>
                 <input type="submit" value="Pagamento" class="submit-btn">
@@ -210,11 +204,11 @@
             <div class="form__pagamento-boleto-boleto">
               <small>Valor em R$</small>
               <div class="form__pagamento-boleto-imput">
-                <input type="text" id="boleto" name="chavePix" required="required" placeholder="R$ 0.000,00"> 
+                <input type="text" id="valorBoleto" name="valorBoleto" required="required" value=""> 
               </div>  
               <small>CPF/CNPJ</small> 
               <div class="form__pagamento-boleto-imput">
-                <input type="text" id="boleto" name="chavePix" required="required" placeholder="999.999.999-99"> 
+                <input type="text" id="boleto" name="boleto" required="required" placeholder="999.999.999-99"> 
               </div>
             </div>           
           <div class="form__pagamento-button">
@@ -316,7 +310,7 @@
         <div  class="footerLinkPage">
           <h2 class="footerTitler">Planos</h2>
           <ul>
-            <li><a href="./carrinho.html">Matrícula</a></li>
+            <li><a href="./loginMembros.html">Matrícula</a></li>
             <li><a href="./contato.html">Contatos</a></li>
           </ul>
         </div>
@@ -347,5 +341,6 @@
   <script src="../JS/pagamentoCartao.js"></script>
   <script src="../JS/header.js"></script>
   <script src="../JS/pagamento.js"></script>
+  <script src="../JS/carrinho.js"></script>
 </body>
 </html>

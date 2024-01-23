@@ -1,6 +1,9 @@
+.herderTraining__title  {
+  padding-bottom: 2rem;
+}
 
 .cards {
-  width: 132rem;
+  width: 100%;
   margin: 2rem;
   display: flex;
   align-items: center;

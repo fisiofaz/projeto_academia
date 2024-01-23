@@ -35,17 +35,11 @@
             <div class="linkSecundary-button-login">
               <a href="./loginMembros.html" title="Entre">Entre</a> ou <a href="./loginMembros.html" title="Cadastre-se">Cadastre-se</a>
             </div>   
-          </div>
-          <div class="linkSecundary-button-menu">
-            <a href="./carrinho.html" rel="noopener noreferrer">
-              <img src="../images/carrinho-de-compra.png" alt="carinho de compra do site">
-            </a>
-          </div>     
+          </div>            
         </div>  
         </div>      
         <div class="menuLinks overlay-content">               
-          <a href="./carrinho.html">Carrinho</a></li>
-          <a href="./membros.html">Membros</a></li>
+          <a href="./termos.html">Termo de Uso</a></li>
           <a href="./galeria.html">Galeria</a></li>
           <a href="./programas.html">Programas de Treinamento</a>
         </div>
@@ -209,14 +203,16 @@
         <div class="sidebar">
           <div class="sidebar__sumary">
             <h3 class="sidebar__sub"> Detalhe da compra</h3>
-            <button class="button">Cadastro</button>
+            <button class="button">
+              <a href="../pages/loginMembros.html" rel="noopener noreferrer">Cadastro</a>
+            </button>
           </div>
           <div class="plan-card">
             <div class="plan-card-b">
               <h2 class = "plan-card-b__title">Carrinho de Compras</h2>
               <ul id="cart" class="list-group"></ul>
               <p>Total: <span id="total">R$0</span></p>
-              <button class="button" id="checkout">
+              <button class="button botao-finalizar">
                 <a href="../pages/pagamento.html">Finalizar</a>                  
               </button>
             </div>
@@ -316,7 +312,7 @@
           <div  class="footerLinkPage">
             <h2 class="footerTitler">Planos</h2>
             <ul>
-              <li><a href="./carrinho.html">Matrícula</a></li>
+              <li><a href="./loginMembros.html">Matrícula</a></li>
               <li><a href="./contato.html">Contatos</a></li>
             </ul>
           </div>
@@ -346,5 +342,6 @@
     </footer>
     <script src="../JS/header.js"></script>
     <script src="../JS/carrinho.js"></script>
+    <script src="../JS/pagamento.js"></script>
   </body>
 </html>
